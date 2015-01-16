@@ -278,8 +278,11 @@
 		<threshold>
 			<mitigation name="cpu" level="off" />
 		</threshold>
-		<threshold trigger="80" clear="78">
+		<threshold trigger="80" clear="75">
 			<mitigation name="cpu" level="2" />
+		</threshold>
+		<threshold trigger="85" clear="80">
+			<mitigation name="cpu" level="3" />
 		</threshold>
 		<threshold trigger="90" clear="85">
 			<mitigation name="cpu" level="4" />
