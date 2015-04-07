@@ -29,7 +29,8 @@ PRODUCT_COPY_FILES += \
     device/sony/honami/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/sony/honami/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/honami/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
-    device/sony/honami/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf
+    device/sony/honami/rootdir/system/etc/sensors_calib.conf:system/etc/sensors_calib.conf \
+    device/sony/honami/rootdir/init.rhine.usb.rc:root/init.rhine.usb.rc
 
 PRODUCT_NAME := aosp_c6903
 PRODUCT_DEVICE := honami
