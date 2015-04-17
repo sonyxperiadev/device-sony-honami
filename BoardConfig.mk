@@ -15,3 +15,6 @@
 include device/sony/rhine/BoardConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := C6903
+
+#BOARD_KERNEL_CMDLINE += mem=93M@0  mem=1666M@255M
+BOARD_KERNEL_CMDLINE += mem=1759M
