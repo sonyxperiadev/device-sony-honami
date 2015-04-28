@@ -20,6 +20,7 @@ $(call inherit-product, device/sony/rhine/device.mk)
 $(call inherit-product, vendor/sony/honami/honami-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 $(call inherit-product-if-exists, prebuilts/chromium/webview_prebuilt.mk)
+$(call inherit-product-if-exists, vendor/google/products/gms.mk)
 
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/honami/overlay
