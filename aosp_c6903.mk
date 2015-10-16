@@ -26,7 +26,6 @@ DEVICE_PACKAGE_OVERLAYS += \
     device/sony/honami/overlay
 
 PRODUCT_COPY_FILES += \
-    device/sony/honami/rootdir/system/etc/flashled_calc_parameters.cfg:system/etc/flashled_calc_parameters.cfg \
     device/sony/honami/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/sony/honami/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/honami/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf \
