@@ -22,10 +22,29 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 DEVICE_PACKAGE_OVERLAYS += \
     device/sony/honami/overlay
 
+# Device etc
 PRODUCT_COPY_FILES += \
     device/sony/honami/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
     device/sony/honami/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
     device/sony/honami/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
+
+# Device Init
+PRODUCT_PACKAGES += \
+    init.recovery.honami \
+    init.honami \
+    ueventd.honami
+
+# Lights
+PRODUCT_PACKAGES += \
+    lights.honami
+
+# Simple PowerHAL
+PRODUCT_PACKAGES += \
+    power.honami
+
+# NFC
+PRODUCT_PACKAGES += \
+    nfc.honami
 
 PRODUCT_NAME := aosp_c6903
 PRODUCT_DEVICE := honami
