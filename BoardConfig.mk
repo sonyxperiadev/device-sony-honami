@@ -17,5 +17,5 @@ include device/sony/common/CommonConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := C6903
 
-#BOARD_KERNEL_CMDLINE += mem=93M@0  mem=1666M@255M
+BOARD_KERNEL_CMDLINE += androidboot.hardware=honami
 BOARD_KERNEL_CMDLINE += mem=1759M
