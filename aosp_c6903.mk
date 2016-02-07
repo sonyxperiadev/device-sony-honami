@@ -14,7 +14,7 @@
 
 TARGET_KERNEL_CONFIG := aosp_rhine_honami_defconfig
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 $(call inherit-product, device/sony/rhine/platform.mk)
 $(call inherit-product, vendor/sony/honami/honami-vendor.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
