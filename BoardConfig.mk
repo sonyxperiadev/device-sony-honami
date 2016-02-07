@@ -13,7 +13,6 @@
 # limitations under the License.
 
 include device/sony/rhine/BoardConfig.mk
-include device/sony/common/CommonConfig.mk
 
 TARGET_BOOTLOADER_BOARD_NAME := C6903
 
