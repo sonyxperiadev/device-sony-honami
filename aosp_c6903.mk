@@ -14,48 +14,13 @@
 
 TARGET_KERNEL_CONFIG := aosp_rhine_honami_defconfig
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
-$(call inherit-product, device/sony/rhine/platform.mk)
-$(call inherit-product, vendor/sony/honami/honami-vendor.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, device/sony/honami/device.mk)
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
-DEVICE_PACKAGE_OVERLAYS += \
-    device/sony/honami/overlay
-
-# Device etc
-PRODUCT_COPY_FILES += \
-    device/sony/honami/rootdir/system/etc/mixer_paths.xml:system/etc/mixer_paths.xml \
-    device/sony/honami/rootdir/system/etc/thermanager.xml:system/etc/thermanager.xml \
-    device/sony/honami/rootdir/system/etc/sensor_def_qcomdev.conf:system/etc/sensor_def_qcomdev.conf
-
-# Device Init
-PRODUCT_PACKAGES += \
-    init.recovery.honami \
-    init.honami \
-    ueventd.honami
-
-# Lights
-PRODUCT_PACKAGES += \
-    lights.honami
-
-# Simple PowerHAL
-PRODUCT_PACKAGES += \
-    power.honami
-
-# NFC
-PRODUCT_PACKAGES += \
-    nfc.honami
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
 PRODUCT_NAME := aosp_c6903
 PRODUCT_DEVICE := honami
 PRODUCT_MODEL := Xperia Z1 (AOSP)
 PRODUCT_BRAND := Sony
 PRODUCT_MANUFACTURER := Sony
-
-PRODUCT_AAPT_CONFIG := large
-PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
-
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=480 \
-    ro.usb.pid_suffix=19E
