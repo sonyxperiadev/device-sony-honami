@@ -45,7 +45,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     nfc.honami
 
-PRODUCT_AAPT_CONFIG := large
+PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREBUILT_DPI := xxhdpi xhdpi hdpi
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
