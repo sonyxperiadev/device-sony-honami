@@ -17,4 +17,3 @@ include device/sony/rhine/PlatformConfig.mk
 TARGET_BOOTLOADER_BOARD_NAME := C6903
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=honami
-BOARD_KERNEL_CMDLINE += mem=1759M
