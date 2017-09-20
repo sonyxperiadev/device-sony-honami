@@ -17,3 +17,6 @@ include device/sony/rhine/PlatformConfig.mk
 TARGET_BOOTLOADER_BOARD_NAME := C6903
 
 BOARD_KERNEL_CMDLINE += androidboot.hardware=honami
+
+# Recovery config
+BOARD_SONY_INIT_FLAGS += -DDEV_BLOCK_FOTA_NUM="16"
